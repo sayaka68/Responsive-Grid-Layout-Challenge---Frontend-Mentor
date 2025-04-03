@@ -1,0 +1,40 @@
+@use "../global" as global;
+
+.bgWhite {
+  background-color: var(--white);
+}
+.bgBlack {
+  background-color: var(--black);
+}
+
+.bgPurple500 {
+  background-color: var(--purple500);
+}
+.bgPurple100 {
+  background-color: var(--purple100);
+}
+.bgYellow100 {
+  background-color: var(--yellow100);
+}
+.bgYellow500 {
+  background-color: var(--yellow500);
+}
+
+.textYellow100 {
+  color: var(--yellow100);
+}
+.textYellow500 {
+  color: var(--yellow500);
+}
+.textPurple100 {
+  color: var(--purple100);
+}
+.textPurple500 {
+  color: var(--purple500);
+}
+.textBlack {
+  color: var(--black);
+}
+.textWhite {
+  color: var(--white);
+}

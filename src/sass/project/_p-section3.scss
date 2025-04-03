@@ -1,0 +1,44 @@
+@use "../global" as global;
+
+.p-section3 {
+  border-radius: 10px;
+  background: var(--yellow-500, #ffcc6a);
+  display: flex;
+  // height: 216.25px;
+  padding: 16px 16px 152px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  // gap: 16px;
+  align-self: stretch;
+  position: relative;
+  overflow: hidden;
+
+  @include global.mq(md) {
+    padding: 24px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    background: url(../../../public/images/illustrations.png) no-repeat top left /
+      contain;
+    width: 208px;
+    height: 100%;
+    position: absolute;
+    aspect-ratio: 208/157;
+    width: 244px;
+    left: -7px;
+    bottom: -70px;
+
+    @include global.mq(md) {
+      bottom: -81px;
+    }
+
+    @include global.mq(lg) {
+      bottom: -150px;
+    }
+  }
+}
+
+.p-section3__heading {
+}

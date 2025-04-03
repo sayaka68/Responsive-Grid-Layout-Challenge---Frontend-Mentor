@@ -1,0 +1,91 @@
+@use "../global" as global;
+
+.textPreset1 {
+  @include global.text-preset(
+    $fontSize: 46px,
+    $fontWeight: 500,
+    $lineHeight: 42px,
+    $letterSpacing: -1.84px
+  );
+
+  @include global.mq(md) {
+    @include global.text-preset(
+      $fontSize: 54px,
+      $lineHeight: 48px,
+      $letterSpacing: -2.16px
+    );
+  }
+
+  @include global.mq(lg) {
+    @include global.text-preset(
+      $fontSize: 62px,
+      $fontWeight: 500,
+      $lineHeight: 58px,
+      $letterSpacing: -3px
+    );
+  }
+}
+
+.textPreset2 {
+  @include global.text-preset(
+    $fontSize: 32px,
+    $fontWeight: 500,
+    $lineHeight: 28px,
+    $letterSpacing: -1.92px
+  );
+
+  @include global.mq(md) {
+    @include global.text-preset(
+      $fontSize: 36px,
+      $lineHeight: 30px,
+      $letterSpacing: -2.16px
+    );
+  }
+
+  @include global.mq(lg) {
+    @include global.text-preset(
+      $fontSize: 40px,
+      $fontWeight: 500,
+      $lineHeight: 36px,
+      $letterSpacing: -2px
+    );
+  }
+}
+
+.textPreset3 {
+  @include global.text-preset(
+    $fontSize: 26px,
+    $fontWeight: 500,
+    $lineHeight: 24px,
+    $letterSpacing: -1.56px
+  );
+
+  @include global.mq(md) {
+    @include global.text-preset(
+      $fontSize: 28px,
+      $lineHeight: 26px,
+      $letterSpacing: -1.68px
+    );
+  }
+
+  @include global.mq(lg) {
+    @include global.text-preset(
+      $fontSize: 32px,
+      $lineHeight: 28px,
+      $letterSpacing: -2px
+    );
+  }
+}
+
+.textPreset4 {
+  @include global.text-preset(
+    $fontSize: 18px,
+    $fontWeight: 400,
+    $lineHeight: 20px,
+    $letterSpacing: normal
+  );
+}
+
+.italic {
+  font-style: italic;
+}

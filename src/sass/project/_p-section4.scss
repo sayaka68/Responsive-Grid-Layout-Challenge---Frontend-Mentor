@@ -1,0 +1,60 @@
+@use "../global" as global;
+
+// .p-section4 {
+//   display: grid;
+//   border-radius: 10px;
+//   background: var(--purple100);
+//   grid-template-columns: 16px 16px auto 16px 16px;
+// padding-block: 32px;
+// row-gap: 24px;
+//   text-align: center;
+
+//   * {
+//     grid-column: 2/-2;
+//   }
+// }
+
+.p-section4__heading {
+  grid-column: 3/-3;
+}
+
+.p-section4__img {
+  img {
+    @include global.mq(xs) {
+      max-width: 100%;
+    }
+
+    --min-size: 308;
+    --max-size: 357;
+    --max-viewport: 768;
+    width: var(--clamp-size);
+    max-width: unset;
+  }
+}
+
+.p-section4__text {
+  grid-column: 3/-3;
+  letter-spacing: unset;
+}
+
+.p-section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 32px;
+  text-align: center;
+  border-radius: 10px;
+  background: var(--purple100);
+  padding-block: 32px;
+  gap: 24px;
+
+  @include global.mq(md) {
+    padding-inline: 165px;
+  }
+
+  @include global.mq(lg) {
+    padding-inline: 32px;
+    align-items: flex-start;
+    text-align: left;
+  }
+}

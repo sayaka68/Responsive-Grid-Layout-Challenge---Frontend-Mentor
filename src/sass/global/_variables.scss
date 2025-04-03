@@ -1,0 +1,17 @@
+//　色
+$purple100: #dbd1fc;
+$purple500: #7551dc;
+$yellow100: #f9eee2;
+$yellow500: #ffcc6a;
+$black: #121212;
+$white: #ffffff;
+
+$ff: "DM Sans";
+
+$layout-width-inner: 1120px;
+$breakpoints: (
+  "xs": "screen and (min-width:1px) and ( max-width:370px)",
+  "md": "screen and (min-width: 768px)",
+  "lg": "screen and (min-width: #{$layout-width-inner - 1px})",
+  // "xl": "screen and (min-width: 1280px)",
+);

@@ -1,0 +1,11 @@
+@use "../global" as global;
+
+.p-section7-8 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @include global.mq(md) {
+    flex-direction: row;
+  }
+}

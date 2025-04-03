@@ -1,0 +1,25 @@
+@use "../global" as global;
+
+.u-hiddenTbPc {
+  display: block;
+
+  @include global.mq(md) {
+    display: none;
+  }
+}
+
+.u-hiddenSp {
+  display: none;
+
+  @include global.mq(md) {
+    display: block;
+  }
+}
+
+.u-hiddenSpTb {
+  display: none;
+
+  @include global.mq(lg) {
+    display: block;
+  }
+}

@@ -1,0 +1,25 @@
+@use "sass:math";
+@use "sass:map";
+@use "./variables" as vars;
+
+@mixin text-preset(
+  // $color: vars.$black,
+  $fontSize: 46px,
+  $fontWeight: 500,
+  $lineHeight: 91.304%,
+  $letterSpacing: -1.84px
+) {
+  // color: $color;
+  // font-family: vars.$ff;
+  font-size: $fontSize;
+  font-style: normal;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+}
+
+@mixin mq($breakpoint: md) {
+  @media #{map.get(vars.$breakpoints, $breakpoint)} {
+    @content;
+  }
+}

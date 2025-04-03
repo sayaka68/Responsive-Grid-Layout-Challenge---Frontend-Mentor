@@ -1,0 +1,9 @@
+@use "../global" as global;
+
+p {
+  @include global.text-preset;
+
+  @include global.mq(lg) {
+    @include global.text-preset;
+  }
+}

@@ -1,0 +1,43 @@
+@use "../global" as global;
+
+.p-section6 {
+  padding: 24px;
+  background: var(--white);
+  border-radius: 10px;
+
+  @include global.mq(md) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include global.mq(lg) {
+    flex-direction: column;
+  }
+}
+
+.p-section6__heading {
+}
+
+.p-section6__text {
+  margin-top: 15px;
+}
+
+.p-section6__avatars {
+  margin-top: 24px;
+  display: flex;
+  position: relative;
+  padding-right: 113px;
+
+  img {
+    width: 66.6px;
+
+    &:nth-child(2) {
+      position: absolute;
+      left: 56px;
+    }
+    &:nth-child(3) {
+      position: absolute;
+      left: 112px;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@use "../global" as global;
+
+.p-section7 {
+  border-radius: 10px;
+  background: var(--yellow-100, #f9eee2);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+
+  @include global.mq(md) {
+    justify-content: center;
+  }
+
+  @include global.mq(lg) {
+    flex-grow: 1;
+  }
+}
+
+.p-section7__heading {
+}
+
+.p-section7__btn {
+  margin-bottom: 30px;
+  display: inline-flex;
+  padding: 17.182px 25.773px;
+  justify-content: center;
+  align-items: center;
+  gap: 10.739px;
+  background: var(--yellow500);
+  border-radius: 9999px;
+  color: var(--purple-500, #7551dc);
+  font-size: 19.329px;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    background: url(../../../public/images/Vector_section7_deco.svg) no-repeat
+      center center / contain;
+    width: 32.9px;
+    height: 33.974px;
+    position: absolute;
+    bottom: -27px;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    background: url(../../../public/images/Vector.svg) no-repeat center center /
+      contain;
+    width: 17.2px;
+    height: 17.2px;
+  }
+}

@@ -1,0 +1,48 @@
+@use "../global" as global;
+// @use "../global/variables" as *;
+
+:root {
+  scroll-behavior: smooth;
+  --purple100: #{global.$purple100};
+  --purple500: #{global.$purple500};
+  --yellow100: #{global.$yellow100};
+  --yellow500: #{global.$yellow500};
+  --black: #{global.$black};
+  --white: #{global.$white};
+}
+
+* {
+  /* clamp-sizeの変数 */
+  /*  --min-size: 0;
+    --max-size: 100;
+    margin-block-start: var(--clamp-size) のように使う */
+
+  --min-viewport: 375;
+  --max-viewport: 1440;
+
+  /* a 傾き */
+  --slope: calc(
+    (var(--max-size) - var(--min-size)) /
+      (var(--max-viewport) - var(--min-viewport))
+  );
+  /* b 切片 */
+  --intercept: calc(var(--min-size) - var(--slope) * var(--min-viewport));
+  /* y = ax + b */
+  --fluid-size: calc(var(--slope) * 100vw + var(--intercept) / 16 * 1rem);
+
+  /* clamp( 最小サイズ , 可変サイズ , 最大サイズ) */
+  --clamp-size: clamp(
+    var(--min-size) / 16 * 1rem,
+    var(--fluid-size),
+    var(--max-size) / 16 * 1rem
+  );
+}
+
+body {
+  font-family: #{global.$ff};
+  background: #f6f5f6;
+}
+
+p {
+  line-break: strict;
+}
