@@ -20,8 +20,7 @@
   &::after {
     content: "";
     display: block;
-    background: url(../../../public/images/illustrations.png) no-repeat top left /
-      contain;
+    background: url(/images/illustrations.png) no-repeat top left / contain;
     width: 208px;
     height: 100%;
     position: absolute;

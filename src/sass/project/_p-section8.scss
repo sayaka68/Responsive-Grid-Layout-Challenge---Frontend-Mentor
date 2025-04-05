@@ -27,8 +27,8 @@
   &::after {
     content: "";
     display: inline-block;
-    background: var(--yellow500) url(../../../public/images/arrow_purple500.svg)
-      no-repeat center center / 26px 26px;
+    background: var(--yellow500) url(/images/arrow_purple500.svg) no-repeat
+      center center / 26px 26px;
     width: 53.859px;
     height: 53.859px;
     border-radius: 9999px;

@@ -39,8 +39,8 @@
   &::before {
     content: "";
     display: inline-block;
-    background: url(../../../public/images/Vector_section7_deco.svg) no-repeat
-      center center / contain;
+    background: url(/images/Vector_section7_deco.svg) no-repeat center center /
+      contain;
     width: 32.9px;
     height: 33.974px;
     position: absolute;
@@ -50,8 +50,7 @@
   &::after {
     content: "";
     display: inline-block;
-    background: url(../../../public/images/Vector.svg) no-repeat center center /
-      contain;
+    background: url(/images/Vector.svg) no-repeat center center / contain;
     width: 17.2px;
     height: 17.2px;
   }
